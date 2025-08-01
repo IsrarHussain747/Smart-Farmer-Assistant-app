@@ -1,0 +1,17 @@
+embedding_model: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+llm_model: "llama3-8b-8192"
+languages:
+  en: "English"
+  ur: "Urdu"
+sources:
+  agricultural_docs: "Agricultural Documents"
+  weather_data: "Weather Information"
+  crop_calendar: "Crop Calendar"
+  pest_management: "Pest Management"
+error_messages:
+  ur:
+    no_answer: "Sorry, I couldn't generate an answer. Please try again."
+    processing: "Processing your query..."
+  en:
+    no_answer: "Sorry, I couldn't generate an answer. Please try again."
+    processing: "Processing your query..."

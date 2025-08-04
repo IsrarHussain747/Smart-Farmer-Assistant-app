@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Backend API URL
-BACKEND_URL = os.getenv("BACKEND_URL", "https://huggingface.co/spaces/IsrarHussain/farmer-app")
+BACKEND_URL = os.getenv("BACKEND_URL", "https://IsrarHussain-farmer-app.hf.space")
 
 st.title("AgroDoc: Smart Farmer Assistant")
 st.markdown("Ask crop, soil, or weather-related questions and get advice in English or Urdu.")
@@ -106,3 +106,4 @@ if uploaded_file is not None:
     except Exception as e:
 
         st.error(f"Error processing file: {str(e)}")
+
